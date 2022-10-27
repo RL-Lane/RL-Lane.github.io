@@ -39,3 +39,7 @@ ul {
 .bg-primary{
   background: #d64725 !important;
 }
+
+.bckgrd {
+  background-image: url("/assets/images/bckgrd.png");
+}
