@@ -1,66 +1,83 @@
 <!DOCTYPE html>
-<html lang="en-us">
-<head>
-  <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
-</head>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Python Weather Analysis</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="style.css">
+        <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 
-<body>
-  <header>
-    <h1>Rob Lane</h1>
-  </header>
+        
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="https://getfirefox.com">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!--Navigation bar-->
+        <div id="nav-placeholder">
 
-  <a href="https://i.redd.it/2qyov67mh3l11.png", target="_blank"><img src="https://i.redd.it/2qyov67mh3l11.png", alt="I Dodged a Bullit.", title="I Dodged a Bullit."></a>
-  <br><br>
-  <p>>Hi.  I'm an aspiring Data Professional.  I started my journey studying mechanical engineering, but failed to both properly apply myself and to recognize that I had other talents which would be useful to future employers.  I typically work well with new software, and I've ended up using that skill to learn Solidworks, a common tool actually used by many mechanical engineers.
-  </p><br>
-  <p>I've learned a few programming languages along the way, and typically perform well in them.  I am excited to finally be learning actual collaboration tools used by professionals.
-  </p>
+        </div>
 
-  <ul>
-    <li><a href="https://www.linkedin.com/in/robert-lane-jr/">LinkedIn Profile</a></li>
-    <li><a href="https://github.com/RL-Lane">GitHub Profile</a></li>
-  </ul>
+        <script>
+        $(function(){
+        $("#nav-placeholder").load("navbar.html");
+        });
+        </script>
+        <!--end of Navigation bar-->
 
-  <style type="text/css">
-    .tg  {border-collapse:collapse;border-color:#aaa;border-spacing:0;}
-    .tg td{background-color:#fff;border-color:#aaa;border-style:solid;border-width:1px;color:#333;
-      font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
-    .tg th{background-color:#f38630;border-color:#aaa;border-style:solid;border-width:1px;color:#fff;
-      font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-    .tg .tg-4erg{border-color:inherit;font-style:italic;font-weight:bold;text-align:left;vertical-align:top}
-    .tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
-    .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-    @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}</style>
-    <div class="tg-wrap"><table class="tg">
-    <thead>
-      <tr>
-        <th class="tg-7btt" colspan="3">Favorites</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="tg-4erg">Languages<br></td>
-        <td class="tg-4erg">TV Shows<br></td>
-        <td class="tg-4erg">Movies</td>
-      </tr>
-      <tr>
-        <td class="tg-0pky">Python</td>
-        <td class="tg-0pky">The IT Crowd</td>
-        <td class="tg-0pky">The Best Man (1964)</td>
-      </tr>
-      <tr>
-        <td class="tg-0pky">C#</td>
-        <td class="tg-0pky">Futurama</td>
-        <td class="tg-0pky">Lawrence of Arabia</td>
-      </tr>
-      <tr>
-        <td class="tg-0pky">C++</td>
-        <td class="tg-0pky">Better Off Ted</td>
-        <td class="tg-0pky">Lord of the Rings</td>
-      </tr>
-    </tbody>
-    </table></div>
-</body>
 
+        <h1 class="text-info text-center">Main Landing Page</h1>
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-7">
+                
+                    <h2 class="text-danger text-center">Project Summary</h2>
+                    <a href="assets/images/humidity_map.png" target="_blank"><img class="float-start px-3" width="60%" src="assets/images/humidity_map.png"></a>
+                    <p>The purpose of this project was to analyze how real weather can be correlated to various inputs, 
+                        including latitude, humidity, and wind. Data was based on approximately 600 cities that were the 
+                        closest points to randomly-generated latitude / longitude coordinates.  No cities are repeated. </p>
+                    <p>It should be noted here that the original lat/lng combinations 
+                        would appear roughly evenly distributed on a Mercator projection, but on a globe, 
+                        this would favor cities nearer the north and south poles.  Furthermore, since it finds the nearest city, 
+                        and 3/4ths of the world is ocean, actual selected cities will favor coastal locations.</p>
+                    <p>If you would like to see more about this project, feel free to check out <a href="https://github.com/RL-Lane/python-api-challenge">the code at my GitHub project.</a></p>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="container">
+                        <h2 class="text-danger text-center">Visualisations</h2>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h4 class="text-center">Latitude vs. Temp</h4>
+                                <a href="lat_v_temp.html"><img class="px-3" width="100%" src="assets/images/lat_v_temp.png"> </a>
+                            </div>
+                            <div class="col-sm-6">
+                                <h4 class="text-center">Latitude vs. Clouds</h4>
+                                <a href="lat_v_clouds.html"><img class="px-3" width="100%" src="assets/images/lat_v_cloud.png"> </a>
+                            </div>
+                            <div class="col-sm-6">
+                                <h4 class="text-center">Latitude vs. Wind</h4>
+                                <a href="lat_v_wind.html"><img class="px-3" width="100%" src="assets/images/lat_v_wind.png"> </a>
+                            </div>
+                            <div class="col-sm-6">
+                                <h4 class="text-center">Mapped Data</h4>
+                                <a href="maps.html"><img class="px-3" width="100%" src="assets/images/hotels.png"> </a>
+                            </div>
+                        </div>
+                    </div>
+                        
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
