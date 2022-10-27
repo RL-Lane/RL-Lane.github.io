@@ -40,6 +40,6 @@ ul {
   background: #d64725 !important;
 }
 
-.bckgrd {
-  background-image: url("/assets/images/bckgrd.png");
+.dropdown-menu {
+  min-width: 1000px !important;
 }
