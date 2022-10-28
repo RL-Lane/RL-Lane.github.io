@@ -43,3 +43,7 @@ ul {
 .dropdown-menu {
   min-width: 1000px !important;
 }
+
+.project {
+  text-decoration: none;
+}
